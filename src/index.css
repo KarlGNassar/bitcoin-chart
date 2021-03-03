@@ -46,3 +46,19 @@ body {
 .down {
   color: #d93025;
 }
+
+.fade-top {
+  height: 4.5rem;
+  background-image: linear-gradient(to top, #424242, black);
+}
+/* 
+.fade-bottom {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.9),
+    black
+  );
+  transform: translateY(-50%);
+} */

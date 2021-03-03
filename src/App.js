@@ -102,14 +102,16 @@ function App() {
         </div>
       </div>
 
+        <div className="fade-top" />
       <div className="chart">
         <Chart
           options={chart.options}
           series={series}
           type="candlestick"
           width="100%"
-          height={450}
+          height={400}
         />
+
       </div>
     </div>
   );
