@@ -72,8 +72,7 @@ function App() {
   }, [price])
 
   const direction = useMemo(() =>
-    prevPrice < price ? 'up' : prevPrice > price ? 'down' : '',
-  [])
+    prevPrice < price ? 'up' : prevPrice > price ? 'down' : '')
 
   const directionEmojies = {
     'up': '📈',
