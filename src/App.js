@@ -2,7 +2,7 @@
  import Chart from 'react-apexcharts'
 
 const proxyUrl = 'http://cors-anywere.herokuapp.com/'
-const stockUrl = `${proxyUrl}https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?region=US&lang=en-US&includePrePost=false&interval=1mo&range=max&corsDomain=uk.search.yahoo.com`
+const stockUrl = `https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?region=US&lang=en-US&includePrePost=false&interval=1mo&range=max&corsDomain=uk.search.yahoo.com`
 async function getStocks() {
   const response = await fetch(stockUrl)
   return response.json()
