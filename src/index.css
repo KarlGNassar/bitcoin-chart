@@ -1,19 +1,31 @@
 body {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+.contaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ticker {
-  font-size: 10vmin;
+  color: white;
+  font-size: 8vmin;
   text-align: center;
 }
 
 .price {
-  font-size: 15vmin;
+  color: white;
+  font-size: 12vmin;
   text-align: center;
 }
 
@@ -23,9 +35,4 @@ body {
 
 .down {
   color: #d93025;
-}
-
-.price-time {
-  font-size: 7vmin;
-  text-align: center;
 }
