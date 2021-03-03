@@ -21,6 +21,15 @@ body {
   color: white;
   font-size: 8vmin;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img{
+  margin-right: 10px;
+  width: 40px;
+  object-fit: contain;
 }
 
 .price {

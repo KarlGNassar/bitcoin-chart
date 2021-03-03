@@ -1,5 +1,6 @@
  import React, { useEffect, useState, useMemo } from 'react'
  import Chart from 'react-apexcharts'
+ import Bitcoin from './images/bitcoin.png'
 
 const priceUrl = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'
 const ohlcUrl = 'https://api.coingecko.com/api/v3/coins/bitcoin/ohlc?vs_currency=usd&days=30'
@@ -86,7 +87,14 @@ function App() {
     <div className="container">
       <div className="header">
         <div className="ticker">
+          <div className="logo">
+            <img src={Bitcoin} alt="Bitcoin"/>
+          </div>
+
+          <div className="name">
           BTC
+          </div>
+          
         </div>
 
         <div className={['price', direction].join(' ')}>
